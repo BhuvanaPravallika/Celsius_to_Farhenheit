@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Temperature Conversion</title>
+    </head>
+    <link rel="stylesheet" href="style.css">
+    <body>
+        <header>
+            <h1>Welcome To Temperature Convertor Program</h1>
+        </header>
+        <img src="sun.jpg" alt="Temp_Emoji"  align="right">
+        <div class="kit">
+            <script>
+            function Convert()
+            {
+                var Farhenheit;
+               var c=parseInt(document.getElementById('temp').value);
+                Farhenheit=(1.8)*c +32;
+                console.log(Farhenheit)
+               document.getElementById('demo').innerHTML= Farhenheit;
+              
+            }
+            </script>
+            <label for="temp"><h3>Enter Temperature</h3></label>
+            <input type="number" id="temp"/><br><br>
+            <label for="opt"><h3>Select To Convert</h3></label>
+            <select>
+                <option>Celsius</option>
+                <option>Farhenheit</option>
+            </select>
+            <br><br>
+            <h3>Convert</h3>
+            <button type="button"  onclick="Convert()" >Submit</button>
+        </div>
+        <p id="demo" style="text-align: center;">The value is</p>
+        <p id="dem">This is a Temperature Conversion Application. Here You will the temperature from Celsius scale to the Farhenheit scale.</p>
+    </body>
+</html>
